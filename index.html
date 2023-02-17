@@ -1,14 +1,193 @@
 <!DOCTYPE html>
 <html lang="id">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="author" content="richiesuper">
-		<meta name="description" content="My personal digital Curriculum Vitae.">
-		<meta name="keywords" content="cv, curriculum-vitae, web, digital, html, css">
-		<link rel="stylesheet" type="text/css" href="styles.css">
-		<title>Curriculum Vitae - Richie Seputro</title>
-	</head>
-	<body>
-	</body>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="richiesuper">
+	<meta name="description" content="My personal digital Curriculum Vitae.">
+	<meta name="keywords" content="cv, curriculum-vitae, web, digital, html, css">
+	<link rel="stylesheet" type="text/css" href="./assets/stylesheets/styles.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
+	<title>Curriculum Vitæ - Richie Seputro</title>
+
+	<style>
+		body {
+			background: linear-gradient(to right, rgb(215, 185, 130), rgb(245, 245, 245), white, rgb(245, 245, 245), rgb(215, 185, 130));
+			font-family: 'Font Awesome', serif;
+		}
+
+		header {
+			text-align: center;
+		}
+
+		header > h1 {
+			text-decoration: underline;
+		}
+
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+
+		th, td {
+			padding: 10px;
+		}
+
+		caption {
+			font-weight: bold;
+		}
+
+		table {
+			margin: 25px auto;
+			font-size: 20px;
+		}
+
+		table.information th, table.skills th, table.contacts {
+			text-align: left;
+		}
+
+		footer.copyright {
+			text-align: center;
+		}
+
+		.photo {
+			width: 200px;
+			height: 200px;
+			border-width: 2px;
+			border-style: solid;
+			/*border-color: #FFAA33;*/
+			border-color: black;
+			border-radius: 50%;
+		}
+
+		.prog-lang-icon {
+			width: 20px;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Curriculum Vitæ</h1>
+		<img class="photo" src="./assets/images/photo.png">
+	</header>
+	<main>
+		<!-- Tabel data diri -->
+		<table class="information">
+			<caption>Data Diri</caption>
+			<tr>
+				<th>Nama</th>
+				<td>Richie Seputro</td>
+			</tr>
+			<tr>
+				<th>Tempat, Tanggal Lahir</th>
+				<td><span title="Kota Pahlawan">Surabaya</span>, 8 Agustus 2003</td>
+			</tr>
+			<tr>
+				<th>Agama</th>
+				<td>Kristen</td>
+			</tr>
+			<tr>
+				<th>Status Pernikahan</th>
+				<td>Belum Menikah</td>
+			</tr>
+			<tr>
+				<th>Jenis Kelamin</th>
+				<td>Laki-laki</td>
+			</tr>
+			<tr>
+				<th>Pekerjaan</th>
+				<td>Mahasiswa</td>
+			</tr>
+			<tr>
+				<th>Kewarganegaraan</th>
+				<td>WNI (Warga Negara Indonesia)</td>
+			</tr>
+		</table>
+
+		<!-- Tabel riwayat pendidikan -->
+		<table class="education">
+			<caption>Riwayat Pendidikan</caption>
+			<tr>
+				<th>2009-2015</th>
+				<td>Sekolah Dasar Kristen Dharma Mulya</td>
+			</tr>
+			<tr>
+				<th>2015-2018</th>
+				<td>Sekolah Menengah Pertama Kristen Dharma Mulya</td>
+			</tr>
+			<tr>
+				<th>2018-2021</th>
+				<td>Sekolah Menengah Atas Kristen Dharma Mulya</td>
+			</tr>
+			<tr>
+				<th>2021-[<span title="Ekspektasi tahun kelulusan">2025</span>]</th>
+				<td>Institut Teknologi Sepuluh Nopember (Teknik Informatika)</td>
+			</tr>
+		</table>
+
+		<!-- Tabel kemampuan -->
+		<table class="skills">
+			<caption>Kemampuan</caption>
+			<tr>
+				<th>Bahasa Pemrograman</th>
+				<td>
+					C <img class="prog-lang-icon" src="./assets/images/icons8-c-programming-48.png">,
+					C++ <img class="prog-lang-icon" src="./assets/images/icons8-c++-48.png">,
+					Java <i class="fab fa-java"></i>,
+					Python <i class="fab fa-python"></i>,
+					R <i class="fab fa-r-project"></i>,
+					SQL <i class="fas fa-database"></i>,
+					JavaScript <i class="fab fa-js"></i>,
+					HTML <i class="fab fa-html5"></i>,
+					CSS <i class="fab fa-css3"></i>
+				</td>
+			</tr>
+			<tr>
+				<th>Konten <i>Multimedia</i></th>
+				<td>
+					<span title="Editor foto">GIMP</span> <i class="fas fa-image"></i>,
+					<span title="Editor video">Kdenlive</span> <i class="fas fa-video"></i>,
+					<span title="Editor audio">Audacity</span> <i class="fas fa-music"></i>
+				</td>
+			</tr>
+			<tr>
+				<th>Program <i>Office</i></th>
+				<td>
+					Word <i class="fas fa-file-word"></i>,
+					Excel <i class="fas fa-table"></i>,
+					PowerPoint <i class="fas fa-file-powerpoint"></i>
+				</td>
+			</tr>
+		</table>
+
+		<!-- Tabel kontak -->
+		<table class="contacts">
+			<caption>Kontak dan Media Sosial</caption>
+			<tr>
+				<th><i class="fas fa-phone-alt"></i> Telepon</th>
+				<td><a href="tel:+6282335663888">082335663888</a></td>
+			</tr>
+			<tr>
+				<th><i class="fas fa-envelope"></i> E-mail</th>
+				<td><a href="mailto:richie9963@gmail.com">richie9963@gmail.com</a></td>
+			</tr>
+			<tr>
+				<th><i class="fab fa-linkedin"></i> LinkedIn</th>
+				<td><a href="https://www.linkedin.com/in/richie-seputro-567184213/">Richie Seputro</a></td>
+			</tr>
+			<tr>
+				<th><i class="fab fa-github"></i> GitHub</th>
+				<td><a href="https://github.com/richiesuper">richiesuper</a></td>
+			</tr>
+			<tr>
+				<th><i class="fab fa-blogger"></i> Blogger</th>
+				<td><a href="https://www.blogger.com/profile/03409003291066206682">Richie Seputro</a></td>
+			</tr>
+		</table>
+	</main>
+	<footer class="copyright">
+		<!-- Copyright notice -->
+		&copy; 2023 Richie Seputro
+	</footer>
+</body>
 </html>
